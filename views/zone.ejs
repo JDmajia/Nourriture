@@ -1,0 +1,16 @@
+<% if(!user){%>
+<div class="hero-unit">
+    <h1>Welcome to Nourriture</h1>
+    <h2>Share Your Nourriture</h2>
+    <p>
+        <a class="btn btn-parimary btn-large" href="/login">Log In</a>
+        <a class="btn btn-large" href="/reg">Register</a>
+    </p>
+</div>
+    <div class="form-actions">
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+<% }else{ %>
+<%-partial('userhead')%>
+<%}%>
+<%-partial('myzone')%>
